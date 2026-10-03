@@ -4,7 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv(Path(__file__).with_name("student_data.csv"), sep=";")
+script_dir = Path(__file__).resolve().parent if "__file__" in globals() else Path.cwd()
+df = pd.read_csv(script_dir / "student_data.csv", sep=";")
 print("Dataset Shape : ",df.shape)
 print(df.head())
 print("Dataset Information : ")
