@@ -1,0 +1,30 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import MinMaxScaler,StandardScaler
+from sklearn.decomposition import PCA
+df = pd.read_csv("/content/Titanic-Dataset (1).csv")
+df["Age"] = df["Age"].fillna(df["Age"].median())
+features=df[['Pclass','Age','SibSp','Parch','Fare']]
+print("original data:\n",features.head())
+minmax=MinMaxScaler()
+normalized = minmax.fit_transform(features)
+print("\nNormalised Data(first 5 rows): \n",normalized[:5].round(3))
+print("\nNormalised Range: ",normalized.min(), "to", normalized.max())
+scaler = StandardScaler()
+standardized = scaler.fit_transform(features)
+print("\nStandardised Data(first 5 rows): \n",standardized[:5].round(3))
+print("\nStandardised Mean: ",standardized.mean().round(4),"std: ",standardized.std().round(4))
+pca = PCA(n_components=2)
+principal_components = pca.fit_transform(standardized)
+print("Shape before PCA:", standardized.shape, "| Shape after PCA:", principal_components.shape)
+print("Explained variance ratio:", pca.explained_variance_ratio_.round(4))
+print("Total variance captured by 2 components:", round((sum(pca.explained_variance_ratio_)*100), 2),"%")
+colors = df["Survived"].map({1: "green", 0: "red"})
+plt.scatter(principal_components[:, 0], principal_components[:, 1], c=colors, alpha=0.6)
+plt.scatter([], [], c="green", label="Survived")
+plt.scatter([], [], c="red", label="Did not survive")
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.title("PCA: 5 features reduced to 2")
+plt.legend()
+plt.show()
