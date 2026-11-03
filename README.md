@@ -8,12 +8,7 @@ The notebook uses logistic regression to predict passenger survival and reports 
 
 ### Confusion matrix preview
 
-The preview shows the matrix layout; numeric counts are generated when the notebook runs. The notebook saves the resulting plot as `experiment_08_confusion_matrix.png`.
-
-| Actual / Predicted | Not Survived | Survived |
-|---|---|---|
-| Not Survived | True negatives | False positives |
-| Survived | False negatives | True positives |
+The notebook includes an embedded image preview of the confusion matrix. Its numeric counts are generated when the notebook runs, and the resulting plot is saved as `experiment_08_confusion_matrix.png`.
 
 The notebook expects `Titanic-Dataset.csv` at `/content/Titanic-Dataset.csv` (the default Google Colab path).
 
