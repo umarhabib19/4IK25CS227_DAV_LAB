@@ -12,3 +12,7 @@ The notebook includes an embedded image preview of the confusion matrix. Its num
 
 The notebook expects `Titanic-Dataset.csv` at `/content/Titanic-Dataset.csv` (the default Google Colab path).
 
+## Experiment 9: Iris Decision Tree
+
+The [Experiment 9 notebook](4IK25CS227_EXP_09.ipynb) includes an embedded decision-tree image preview and trains on scikit-learn's built-in Iris dataset. Running it saves the fitted tree as `experiment_09_decision_tree.png`.
+
