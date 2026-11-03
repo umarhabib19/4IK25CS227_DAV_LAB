@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" role="img" aria-labelledby="title desc">
+  <title id="title">Experiment 8 confusion matrix preview</title>
+  <desc id="desc">A schematic confusion matrix showing actual and predicted survival classes. Numeric counts appear after running the notebook.</desc>
+  <rect width="760" height="420" fill="#fff"/>
+  <text x="380" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#1f2937">Confusion Matrix — Titanic Survival</text>
+  <text x="465" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="600" fill="#374151">Predicted</text>
+  <text x="370" y="111" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#374151">Not Survived</text>
+  <text x="550" y="111" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#374151">Survived</text>
+  <text x="115" y="215" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="600" fill="#374151" transform="rotate(-90 115 215)">Actual</text>
+  <text x="215" y="180" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#374151" transform="rotate(-90 215 180)">Not Survived</text>
+  <text x="215" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#374151" transform="rotate(-90 215 320)">Survived</text>
+  <rect x="280" y="130" width="180" height="130" fill="#c6dbef" stroke="#fff" stroke-width="4"/>
+  <rect x="460" y="130" width="180" height="130" fill="#eff6fc" stroke="#fff" stroke-width="4"/>
+  <rect x="280" y="260" width="180" height="130" fill="#eff6fc" stroke="#fff" stroke-width="4"/>
+  <rect x="460" y="260" width="180" height="130" fill="#c6dbef" stroke="#fff" stroke-width="4"/>
+  <text x="370" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#1f2937">True negatives</text>
+  <text x="370" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#374151">(count after run)</text>
+  <text x="550" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#1f2937">False positives</text>
+  <text x="550" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#374151">(count after run)</text>
+  <text x="370" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#1f2937">False negatives</text>
+  <text x="370" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#374151">(count after run)</text>
+  <text x="550" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#1f2937">True positives</text>
+  <text x="550" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#374151">(count after run)</text>
+</svg>
