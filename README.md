@@ -1,5 +1,9 @@
 ﻿# DAV Lab Experiments
 
+## Experiential Learning: Swiggy Bangalore Data Analysis
+
+**Notebook:** [Open the rendered notebook preview](DavExpL.ipynb)
+
 ## Experiment 8: Titanic Survival Prediction
 
 The notebook uses logistic regression to predict passenger survival and reports classification metrics with a confusion matrix.
