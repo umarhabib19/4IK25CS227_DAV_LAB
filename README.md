@@ -1,4 +1,4 @@
-﻿# DAV Lab Experiments
+# DAV Lab Experiments
 
 ## Experiential Learning: Swiggy Bangalore Data Analysis
 
@@ -20,3 +20,13 @@ The notebook expects `Titanic-Dataset.csv` at `/content/Titanic-Dataset.csv` (th
 
 The [Experiment 9 notebook](4IK25CS227_EXP_09.ipynb) includes an embedded decision-tree image preview and trains on scikit-learn's built-in Iris dataset. Running it saves the fitted tree as `experiment_09_decision_tree.png`.
 
+
+## Experiment 11: Hierarchical Clustering
+
+The notebook groups house listings with Ward-linkage agglomerative clustering and includes a dendrogram.
+
+**Notebook:** [Open the Experiment 11 notebook](4IK25CS227_EXP_11.ipynb)
+
+The notebook expects House_Price_dataset.csv at /content/House_Price_dataset.csv (the default Google Colab path).
+
+**Preview:** [View the two-graph preview](experiment_11_preview.svg)
